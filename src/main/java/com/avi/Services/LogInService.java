@@ -20,5 +20,36 @@ public class LogInService {
 	}
 	
 	
+	
+	
+	public void arm(int m) {
+		
+		
+		System.out.println("=====================Armstrong service is start========");
+		int r=0,sum=0,n=m;
+		System.out.println("Current r="+r);
+		System.out.println("current sum="+sum);
+		while (n>0) {
+			
+			r=n%10;
+			System.out.println("update remainder is="+r);
+			sum=sum+r*r*r;
+			System.out.println("update sum="+sum);
+			n=n/10;
+			System.out.println("update n="+n);
+			
+			
+		}
+		
+		if(m==sum)
+			System.out.println("given nimber is an armstrong");
+		else {
+			System.out.println("not armstrong");
+		}
+		
+		System.out.println("=====================Armstrong service is END========");
+	}
+	
+	
 
 }

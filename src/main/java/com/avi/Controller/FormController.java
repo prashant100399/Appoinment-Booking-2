@@ -53,4 +53,21 @@ public class FormController {
 			return "userRegister";
 			
 		}
+		
+		
+		@RequestMapping(value = "/armstrong",method = RequestMethod.POST)
+		public void checkArmstrong(@RequestParam int n) {
+			
+			System.out.println("your entered number is as follow" + n);
+			loginservice.arm(n);
+			
+			
+		}
+		
+		@GetMapping("/home")
+		public ModelAndView getIndexForm() {
+			return new ModelAndView("index");
+			
+		}
+		
 }
